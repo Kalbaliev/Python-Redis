@@ -31,7 +31,7 @@ r = redis.Redis(host='localhost', port=6379, db=0)
 ```
 ## Pub-Sub (Messaging Broker on Redis) with `pub-sub.py` file
 
-#### Subscribe to channel (channels)
+#### Subscribe to channel (channels) on `CMD terminal`
 - ***`subscribeChannel (channels)`*** - give channels' names from list type
 ```python
   python pub-sub.py subscribeChannel ['first-channel','second-channel']
@@ -39,7 +39,7 @@ r = redis.Redis(host='localhost', port=6379, db=0)
 
 
 
-#### Publish  message to channel
+#### Publish  message to channel on `CMD terminal`
 - ***`publishChannel (channel,msg)`*** - give channel's' name and message from string (***with ***"***(2 quotes)  symbol, not ***'***(1 quote) symbol***)
 ```python
   python pub-sub.py publishChannel "first-channel" "My first message from Redis"
